@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pin Matcher</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<main>
+    <div class="container">
+        <div class="title">
+            <h2>Pin Matcher</h2>
+        </div>
+    </div><!--title end-->
+
+    <!-- pin matcher with calculator start -->
+    <div class="main-container">
+        
+        <div class="half">
+            <div class="random-number">
+                <div class="pingenerate" id="pinGnet">----</div>
+                <div class="pinbtnarea">
+                    <div class="pinbtn" id="pinGbtn">
+                        Generate<br>Pin
+                    </div>
+                </div>
+            </div>
+
+        </div><!--random number end-->
+        
+        <div class="half">
+            <div class="calculator">
+                <div class="result">----</div>
+                <div class="buttons">
+                    <span class="button number">7</span>
+                    <span class="button number">8</span>
+                    <span class="button number">9</span>
+                    <span class="button number">4</span>
+                    <span class="button number">5</span>
+                    <span class="button number">6</span>
+                    <span class="button number">1</span>
+                    <span class="button number">2</span>
+                    <span class="button number">3</span>
+                    <span class="button operator"><</span>
+                    <span class="button number">0</span>
+                    <span class="button operator resetBtn">C</span>
+                </div>
+                <button id="submitBtn" class="submit">Submit</button>
+            </div><!--calculator end-->
+        </div>
+    </div><!-- pin matcher with calculator start -->
+
+
+    <div class="container">
+        <div class="notify-section">
+            <p style="color: #fff;" id="fail" class="notify"><span class="danger" >&times</span> Pin Didn't Match, Please try again</p>
+            <p style="color: #fff;" id="success" class="notify"><span class="green" >&#10004;</span> Pin Matched... Secret door is opening for you</p>
+        </div>
+    </div>
+
+
+</main>
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
